@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FormPractice</title>
+</head>
+<body>
+    <div class="left-container">
+        <div class="banner">
+            <h1><img src="images/odin-lined.png" class="logo">ODIN</h1>
+        </div>
+    </div>
+    <div class="right-container">
+
+        <div class="form-motivation">
+            <p>This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>you <em>know</em> you want to</p>
+        </div>
+        <form action="" method="get">
+            <div class="form-controls">
+                <h1>Let's do this!</h1>
+                <div class="form-group">
+                    <div class="form-control-name">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" id="name" name="user_name" placeholder="Here goes your name">
+                    </div>
+                    <div class="form-control-last-name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="user_last_name" placeholder="Here goes your last name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-control-mail">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" name="user_mail" placeholder="yourmail@something.com">
+                    </div>
+                    <div class="form-control-number">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" name="user_number"placeholder="xx-xxxx-xxxx">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-control-password">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="user_pwd">
+                    </div>
+                    <div class="form-control-name">
+                        <label for="name">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" name="user_confirmed">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create account</button>
+        </form>
+            <p>already have an account? <a href="#">log in</a></p>
+    </div>
+</body>
+</html>
