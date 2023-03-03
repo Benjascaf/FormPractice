@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
     <title>FormPractice</title>
 </head>
 <body>
@@ -27,22 +30,22 @@
                 <div class="form-group">
                     <div class="form-control-name">
                         <label for="name">FIRST NAME</label>
-                        <input type="text" id="name" name="user_name" placeholder="Here goes your name">
+                        <input type="text" id="name" name="user_name" placeholder="Here goes your name" required>
                     </div>
                     <div class="form-control-last-name">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="user_last_name" placeholder="Here goes your last name">
+                        <input type="text" id="last_name" name="user_last_name" placeholder="Here goes your last name" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <div class="form-control-mail">
                         <label for="mail">EMAIL</label>
-                        <input type="email" id="mail" name="user_mail" placeholder="yourmail@something.com">
+                        <input type="email" id="mail" name="user_mail" placeholder="yourmail@something.com" required>
                     </div>
                     <div class="form-control-number">
                         <label for="number">PHONE NUMBER</label>
-                        <input type="tel" id="number" name="user_number"placeholder="xx-xxxx-xxxx">
+                        <input type="tel" id="number" name="user_number" pattern="0?\d{2}-?\d{4}-?\d{4}" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -52,7 +55,7 @@
                     </div>
                     <div class="form-control-name">
                         <label for="name">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm" name="user_confirmed">
+                        <input type="password" id="confirm" name="user_confirmed" required>
                     </div>
                 </div>
             </div>
